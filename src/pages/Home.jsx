@@ -6,12 +6,24 @@ import {
   Cog,
   ArrowRight,
   Timer,
+ ShieldCheck,
+  Tag,
+  CircleDollarSign ,
+   Users,
 } from "lucide-react";
 
 import car1 from "../assets/pic/car1.png";
 import car2 from "../assets/pic/car2.jpg";
 import car3 from "../assets/pic/car3.jpg";
 import car4 from "../assets/pic/car4.png";
+import car5 from "../assets/pic/car5.jpg";
+import car6 from "../assets/pic/car6.jpg";
+import logos1 from "../assets/pic/logos1.jpg"
+import logos2 from "../assets/pic/logos2.jpg"
+import logos3 from "../assets/pic/logos3.jpg"
+import logos4 from "../assets/pic/logos4.jpg"
+import logos5 from "../assets/pic/logos5.png"
+import logos6 from "../assets/pic/logos6.png"
 
 const carItems = [
   {
@@ -298,6 +310,111 @@ const Home = () => {
               Load More
             </button>
           </div>
+        </div>
+      </section>
+      <section className="w-full flex items-center justify-center bg-gray-200">
+        <div className="py-10 flex flex-col md:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col items-center justify-center gap-2 w-70 p-4">
+            <ShieldCheck size={55} color="" />
+            <h1 className="text-lg font-bold uppercase text-gray-800">
+              QUALITY YOU CAN TRUST
+            </h1>
+            <p className="text-gray-600 text-center max-w-2xl w-50 font-normal">
+              lorem ipsum dolor sit amet,  Sed do eiusmod commodo consequat.
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-2 w-70 p-4">
+            <Tag  size={55} color="" />
+            <h1 className="text-lg font-bold uppercase text-gray-800">
+              BEST PRICE GUARANTEE
+            </h1>
+            <p className="text-gray-600 text-center max-w-2xl w-50 font-normal">
+              lorem ipsum dolor sit amet,  Sed do eiusmod commodo consequat.
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-2 w-70 p-4">
+            <CircleDollarSign  size={55} color="" />
+            <h1 className="text-lg font-bold uppercase text-gray-800">
+              FLEXIBLE FINANCING
+            </h1>
+            <p className="text-gray-600 text-center max-w-2xl w-50 font-normal">
+              lorem ipsum dolor sit amet,  Sed do eiusmod commodo consequat.
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-2 w-70 p-4">
+            <Users  size={55} color="" />
+            <h1 className="text-lg font-bold uppercase text-gray-800">
+              EXPERT SUPPORT
+            </h1>
+            <p className="text-gray-600 text-center max-w-2xl w-50 font-normal">
+              lorem ipsum dolor sit amet,  Sed do eiusmod commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white">
+        <div className="w-full flex items-center justify-center py-16">
+          <div className="flex items-center justify-center  ">
+            <div className="flex flex-col items-start ml-14 gap-1.5">
+              <span className="text-sm font-bold uppercase text-rose-500">
+                EASY TO FIND YOUR DREAM CAR
+              </span>
+              <span>
+                <h1 className="text-2xl font-bold uppercase text-gray-800">
+                  GET BEHIND THE WHEEL OF YOUR DREAM CAR TODAY
+                </h1>
+              </span>
+              <span>
+                <p className="text-gray-600 max-w-2xl w-50 font-medium">
+                  Find Out How much Your Current Vehicle Is worth In Just a Few Minutes
+                </p>
+              </span>
+              <button className="mt-2 uppercase flex justify-center items-center bg-blue-600 text-xs text-white py-2 px-4 rounded-sm font-medium hover:bg-blue-700 transition">
+                Get Pre-Aproverd
+              </button>
+            </div>
+            <div>
+                <img src={car5} alt="" className="w-80 h-47 object-cover" />
+            </div>
+          </div>
+          <div className="flex items-center justify-center  ">
+            <div className="flex flex-col items-start ml-14 gap-1.5">
+              <span className="text-sm font-bold uppercase text-rose-500">
+                EASY TO FIND YOUR DREAM CAR
+              </span>
+              <span>
+                <h1 className="text-2xl font-bold uppercase text-gray-800">
+                  GET BEHIND THE WHEEL OF YOUR DREAM CAR TODAY
+                </h1>
+              </span>
+              <span>
+                <p className="text-gray-600 max-w-2xl w-50 font-medium">
+                  Find Out How much Your Current Vehicle Is worth In Just a Few Minutes
+                </p>
+              </span>
+              <button className="mt-2 uppercase flex justify-center items-center bg-blue-600 text-xs text-white py-2 px-4 rounded-sm font-medium hover:bg-blue-700 transition">
+                Get Pre-Aproverd
+              </button>
+            </div>
+            <div>
+                <img src={car6} alt="" className="w-80 h-47 object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="flex items-center justify-center w-full">
+        <div className="w-full justify-center items-center py-5">
+          <h3 className="text-center font-bold text-xl tracking-[3px]">
+            WE PROUDLY CARRY TOP BRAND
+            <div className="flex items-center justify-between w-full px-35 py-10 ">
+              <img src={logos1} alt="" className="w-20" />
+              <img src={logos2} alt="" className="w-15" />
+              <img src={logos3} alt="" className="w-20" />
+              <img src={logos4} alt="" className="w-25" />
+              <img src={logos5} alt="" className="w-25" />
+              <img src={logos6} alt="" className="w-20" />
+            </div>
+          </h3>
         </div>
       </section>
     </div>
