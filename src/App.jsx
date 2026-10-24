@@ -8,6 +8,9 @@ import Shop from './pages/Shop'
 import Services from './pages/Services'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import AuthLayout from './Layout/AuthLayout'
+import Login from './pages/Login'
+import Register from './pages/Register'
 
 function App() {
 
@@ -22,6 +25,10 @@ function App() {
             <Route path='/services' element={<Services />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
+          </Route>
+          <Route element={<AuthLayout/>}>
+            <Route path='/login' element={<Login/>} />
+            <Route  path='/register' element={<Register />}/>
           </Route>
         </Routes>
       </BrowserRouter>

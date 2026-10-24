@@ -1,6 +1,7 @@
 import React from 'react'
-import { Link,NavLink } from 'react-router-dom'
+import { Link,Links,NavLink } from 'react-router-dom'
 import logo1 from '../assets//pic/logo1.png'
+import Login from '../pages/Login'
 
 
 const Navbar = () => {
@@ -54,8 +55,11 @@ const Navbar = () => {
         </li>
       ))}
     </ul>
-    <button className='bg-blue-500 text-white px-4 py-2 rounded cursor-pointer hover:bg-blue-600 transition-colors duration-300'>Login</button>
-    
+   <Link to='/login' className='bg-blue-500 text-white px-4 py-2 rounded
+             cursor-pointer hover:bg-blue-600
+             transition-colors duration-300'>
+       Login 
+   </Link>
     </nav>
   )
 }
