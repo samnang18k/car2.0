@@ -28,6 +28,7 @@ const Register = () => {
 });
 
   const handleChange = (e) => {
+    e.preventDefault();
   setValues({
     ...values,
     [e.target.name]: e.target.value,
@@ -40,6 +41,7 @@ const Register = () => {
        localStorage.setItem ("user" , JSON.stringify(values));
        console.log(localStorage)
        setValues(initialValues);
+       alert("success");
        
 
   }
@@ -54,9 +56,9 @@ const Register = () => {
         onSubmit={handleSubmit}
       >
         <div className='absolute right-8 top-8 flex '>
-          <select name="switch" id="" className='text-blue-300 w-13 outline-0 cursor-pointer'>
+          <select name="switch" id="" className='text-blue-300 w-13 text-sm font-medium outline-0 cursor-pointer'>
           
-          <option value="" className=''>KH <img src={Camflag} alt="" className='object-cover w-45'/></option>
+          <option value="" className=''>KH <img src={Camflag} alt="" className='object-cover '/></option>
           <option value="">ENG</option>
         </select>
         </div>
@@ -107,6 +109,7 @@ const Register = () => {
                    className='py-2 px-3 pr-12  w-85 rounded-sm text-sm text-gray-800 font-medium border-2 border-gray-300 focus:outline-blue-400 relative'
             />
             <button className='absolute right-3 text-gray-400'
+            type='button'
             onClick={()=> setShowPassword(!ShowPassword)}
             >
               {ShowPassword ? <Eye/>: <EyeOff/> }
@@ -125,6 +128,7 @@ const Register = () => {
                    className='py-2 px-3 pr-12  w-85 rounded-sm text-sm text-gray-800 font-medium border-2 border-gray-300 focus:outline-blue-400 relative'
             />
             <button className='absolute right-3 text-gray-400'
+            type='button'
             onClick={()=> setShowPassword(!ShowPassword)}
             >
               {ShowPassword ? <Eye/>: <EyeOff/> }
